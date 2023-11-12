@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.gpts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gpt {
+  flex: 1 1 250px; /* Flex grow, flex shrink, base width */
+  text-decoration: none;
+  color: #444;
+}
+
+.gpt-profile {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px;
+  display: inline-block;
+  width: 250px;
+}
+
+.gpt-profile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gpt img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .gpt-profile {
+      width: 100%;
+  }
+}
