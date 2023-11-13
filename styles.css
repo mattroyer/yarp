@@ -13,7 +13,8 @@ header {
 }
 
 main {
-  margin: 0 25px 25px;
+  width: 600px;
+  margin: 0 auto 25px;
 }
 
 .gpts {
@@ -23,7 +24,8 @@ main {
 }
 
 .gpt {
-  flex: 1 1 250px; /* Flex grow, flex shrink, base width */
+  flex: 1 1 290px; /* Flex grow, flex shrink, base width */
+  flex-grow: 0;
   text-decoration: none;
   color: #444;
   transition: box-shadow 0.12s ease-in-out;
@@ -41,4 +43,15 @@ main {
 
 .gpt p {
   padding: 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    width: unset;
+    margin: 0 25px 25px;
+  }
+
+  .gpt {
+    flex-grow: 1;
+  }
 }
